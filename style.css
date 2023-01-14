@@ -61,7 +61,7 @@ header h4{
 }
 
 body.dark header h4{
-color: var(--txt-secondary);
+   color: var(--txt-secondary);
 }
 
 header h4 span{
@@ -135,6 +135,7 @@ body.dark #dark{
     border-radius: 4px;
     transition: .5s;
  }
+ 
  .container-left button:hover{
     scale: 1.1;
  }
@@ -147,8 +148,30 @@ body.dark #dark{
         padding: 72px 20px;
         text-align: center;
         justify-content: center;
-        gap: 4px;
+        gap: 12px;
         font-size: 72px;
         color: var(--cor-laranja1);
-    
+}
+
+.itens{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.itens .material-symbols-outlined{
+    font-size: 32px;
+}
+
+.itens h2{
+    font-size: var(--fontTxt);
+    color: var(--cor-laranja1);
+}
+
+.itens-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }

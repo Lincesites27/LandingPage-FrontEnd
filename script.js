@@ -10,19 +10,17 @@ darkMode = () =>{
 }
 
 // Contador automático
-let contar = document.querySelector('#contador');
-		let contador = 0;
-        
-        const contagem = ()=>{
-           
-            setInterval(() => contar.innerHTML = contador++, 1);
-
-                       
-            
-        }
+const contar = document.querySelector('#contador');
+let valor = 0;
        
-          clearInterval
-        contagem();
+const contador  = ()=>{
+valor ++;
+if(valor > 300) return
+contar.innerText = valor
+
+}      
+setInterval(contador, 10);   
+       
         
 
        
