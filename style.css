@@ -24,8 +24,12 @@
 
 
 
+
 body{
     background-color: var(--ligh-mode);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   
 }
 
@@ -36,7 +40,7 @@ body.dark{
 
 
 header{
-    margin: 0 auto;
+  
     display: flex;
     max-width: 1000px;
     width: 100%;
@@ -46,7 +50,7 @@ header{
 }
 
 .container{
-    margin: 0 auto;
+
     display: flex;
     max-width: 1000px;
     width: 100%;
@@ -189,4 +193,25 @@ body.dark .container-left p{
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+
+@media(max-width:500px){
+
+    .container{
+        flex-direction: column;
+    }
+    .container-left{
+        width: 100%;
+    }
+    .container-right{
+        width: 100%;
+        margin-top: 48px;
+    }
+
+    .contador{
+        font-size: 32px;
+        padding: 20px;
+    }
+
 }
