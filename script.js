@@ -1,8 +1,6 @@
 // LINK DO SCROLL,BASTA ADICIONAR AS CLASSES 
 ScrollReveal().reveal('.container');
 
-
-
 darkMode = () =>{
 
     const body = document.querySelector("body");
