@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +15,48 @@
     <!-- LINK DO SCROLL JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- LINK DOS ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>LP VENDAS HTML CSS</title>
 </head>
+
 <body>
+
+    <header>
+        <h4>LP Front<span>End</span></h4>
+        <span class="material-symbols-outlined" id="dark" onclick="darkMode()">
+            dark_mode
+        </span>
+        <span class="material-symbols-outlined" id="light" onclick="darkMode()">
+            light_mode
+        </span>
+    </header>
+
+
+    <div class="container">
+
+        <div class="container-left">
     
+            <h2>Lorem ipsum is simply dummy text of the <span>printing and.</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        
+        <button>Quero saber agora!</button>
+        
+        </div>
+
+        <div class="container-right">
+            <img src="./img/lp.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="contador">
+        <span>+ de </span>
+    	<span id="contador"></span>
+        <span> clientes atendidos!</span>
+	</div>
+
 </body>
+
 </html>

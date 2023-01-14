@@ -6,3 +6,149 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --cor-laranja1:#fc580c;
+    --cor-laranja2:#fc6b0a;
+    --cor-laranja3:#ffa927;
+    --txt-primary: #0e0036;
+    --txt-secondary: #e6d7b8;
+    --dark-mode: #222;
+    --ligh-mode: #fff;
+    --fontLogo: 32px;
+    --fontLogoMobile: 16px;
+    --fontTxt: 22px;
+    --fontp: 16px;
+}
+
+
+
+
+body{
+    background-color: var(--ligh-mode);
+  
+}
+
+body.dark{
+    background-color: var(--dark-mode);
+}
+
+
+
+header{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    padding: 24px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    padding: 72px 20px;
+    align-items: center;
+}
+
+header h4{
+    color: var(--txt-primary);
+    font-size: var(--fontLogo);
+    
+}
+
+body.dark header h4{
+color: var(--txt-secondary);
+}
+
+header h4 span{
+    color: var(--cor-laranja2);
+}
+
+.material-symbols-outlined{
+    color: #fc580c;
+    cursor: pointer;
+    
+}
+
+#light{
+    display: none;
+    transition: 1s;
+}
+
+body.dark #light{
+    display: flex;
+}
+body.dark #dark{
+    display: none;
+    transition: 1s;
+}
+
+
+.container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container-right{
+    width: 50%;
+}
+
+.container-right img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.container-left h2{
+    width: 90%;
+    color: var(--txt-primary);
+    font-size: var(--fontLogo);
+}
+.container-left h2 span{
+    color: var(--cor-laranja2);
+}
+
+.container-left p{
+    width: 90%;
+    color: var(--fontp);
+    color: var(--txt-primary);
+}
+
+.container-left button{
+    width: 90%;
+    padding: 12px 24px;
+    background-color: var(--cor-laranja1);
+    border: 1px solid var(--cor-laranja1);
+    color: var(--ligh-mode);
+    font-weight: bold;
+    font-size: var(--fontp);
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--cor-laranja1),
+    0 0 20px var(--cor-laranja1);
+    border-radius: 4px;
+    transition: .5s;
+ }
+ .container-left button:hover{
+    scale: 1.1;
+ }
+
+.contador{
+        margin: 0 auto;
+        display: flex;
+        max-width: 1000px;
+        width: 100%;
+        padding: 72px 20px;
+        text-align: center;
+        justify-content: center;
+        gap: 4px;
+        font-size: 72px;
+        color: var(--cor-laranja1);
+    
+}
