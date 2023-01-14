@@ -111,16 +111,25 @@ body.dark #dark{
     color: var(--txt-primary);
     font-size: var(--fontLogo);
 }
+
+body.dark .container-left h2{
+    color: var(--txt-secondary);
+}
+
+
 .container-left h2 span{
     color: var(--cor-laranja2);
 }
 
 .container-left p{
     width: 90%;
-    color: var(--fontp);
+    font-size: var(--fontp);
     color: var(--txt-primary);
 }
 
+body.dark .container-left p{
+    color: var(--txt-secondary);
+}
 .container-left button{
     width: 90%;
     padding: 12px 24px;
@@ -167,7 +176,13 @@ body.dark #dark{
 
 .itens h2{
     font-size: var(--fontTxt);
-    color: var(--cor-laranja1);
+    color: var(--txt-primary);
+    font-weight: bold;
+}
+
+.itens p{
+    font-size: var(--fontp);
+    color: var(--txt-primary);
 }
 
 .itens-conteudo{
